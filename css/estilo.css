@@ -9,6 +9,12 @@ body,
     overflow-x: hidden;
 }
 
+header #cabeca {
+    padding: 20px 0;
+    position: absolute;
+    height: 150px;
+}
+
 body {
     background: url("../imagens/capa2.jpg"),
         linear-gradient(50deg, #e4d4a0, #dfb305);
@@ -23,10 +29,21 @@ nav.navbar-transparente {
 
 nav.navbar-transparente .navbar-nav .nav-link {
     color: white;
+    border-top: 1px solid #dfb305;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    text-align: center;
 }
 
 nav.navbar-transparente .navbar-nav .nav-link:hover {
-    color: #9bf0e1;
+    /*margin-top: -3px;*/
+    margin-bottom: -3px;
+    margin-top: -3px;
+    color: #dfb305;
+    border-top: 0px solid #dfb305;
+    border-bottom: 3px solid #dfb305;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 nav.navbar-transparente .navbar-toggler {
@@ -57,8 +74,8 @@ nav.navbar-transparente .navbar-toggler {
 }
 
 .btn-roxo:hover {
-    background: #6207e3;
-    border: 2px solid #7c26f8;
+    background: #dfb305;
+    border: 2px solid #e4d4a0;
     color: black;
     font-style: bold;
 }
@@ -88,25 +105,43 @@ nav.navbar-transparente .navbar-toggler {
     padding-bottom: 20px;
 }
 
-#servicos {
-    background: #f5f5f5;
-
+#linguica {
+    height: 678px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.0);
 }
 
-#servicos h2,
+#home h1#topo {
+    margin-top: 200px;
+    font-size: 4em;
+}
+
+#home h1 {
+    font-size: 4em;
+}
+
+#about {
+    background: #f5f5f5;
+}
+
+#about h2,
 h3 {
     color: #dfb305;
 }
 
-#recursos h3 {
-    color: #9bf0e1;
+#about p {
+    font-size: 0.9em;
 }
 
-#recursos h2 {
+#contato h3 {
+    color: #dfb305;
+}
+
+#contato h2 {
     color: white;
 }
 
-#recursos {
+#contato {
     color: white;
 }
 
@@ -144,10 +179,31 @@ h2 {
     letter-spacing: -0.04em;
 }
 
+#contato h2 {
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
 h3 {
     font-size: 2em;
     font-weight: 700;
     letter-spacing: -0.04em;
+}
+
+#contato h3 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#contato p {
+    font-size: 1.6em;
+}
+
+#contato p:hover {
+    color: #dfb305;
+    font-size: 2em;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -155,6 +211,20 @@ h3 {
     .btn-custom {
         margin: 10px 15px;
         font-size: 1em;
+    }
+
+    #home h1#topo {
+        margin-top: 100px;
+        font-size: 3em;
+    }
+
+    #home h1 {
+        font-size: 3em;
+    }
+
+    #home .container .row .capa #carousel-spotify .carousel-inner .carousel-item img {
+        width: 350px !important;
+        height: 400px !important;
     }
 }
 
@@ -167,6 +237,20 @@ h3 {
     .btn-custom {
         margin: 10px 15px;
     }
+
+    #home h1#topo {
+        margin-top: 100px;
+        font-size: 3em;
+    }
+
+    #home h1 {
+        font-size: 3em;
+    }
+
+    #home .container .row .capa #carousel-spotify .carousel-inner .carousel-item img {
+        width: 450px !important;
+        height: 500px !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -175,6 +259,19 @@ h3 {
         font-size: 4em;
     }
 
+    #home h1#topo {
+        margin-top: 100px;
+        font-size: 3em;
+    }
+
+    #home h1 {
+        font-size: 3em;
+    }
+
+    #home .container .row .capa #carousel-spotify .carousel-inner .carousel-item img {
+        width: 550px !important;
+        height: 550px !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -211,7 +308,7 @@ footer .navbar-nav a {
 }
 
 footer .navbar-nav a:hover {
-    color: #9bf0e1;
+    color: #dfb305;
     font-size: 0.8em;
     text-decoration: none;
 }
@@ -223,4 +320,17 @@ footer ul {
 footer ul li {
     float: right;
     margin: 0 5px;
+}
+
+#sobre {
+    padding-top: 150px;
+}
+
+#contatos {
+    background-color: #f5f5f5;
+    height: 150px;
+}
+
+#fundo {
+    background-color: #f5f5f5;
 }
